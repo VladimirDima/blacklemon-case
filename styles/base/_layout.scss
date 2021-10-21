@@ -1,0 +1,62 @@
+@import "variables";
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.product-img {
+    img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+    }
+}
+
+.product-info {
+    .navigate-back {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        outline: inherit;
+        font-weight: 300;
+        margin: $default-margin;
+    }
+    .product-title {
+        margin: $default-margin;
+        font-size: $font-size-h3;
+    }
+    .product-subtitle {
+        margin: $default-margin;
+        font-weight: 300;
+        color: $grey;
+    }
+    .product-description {
+        margin: $default-margin;
+        font-weight: 300;
+        color: $grey;
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: $default-margin;
+        .icon {
+            display: flex;
+            align-items: center;
+            min-width: 175px;
+            height: 100px;
+            padding: 5px;
+        }
+    }
+    .add-to-cart {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        outline: inherit;
+        font-weight: 300;
+        margin: $default-margin;
+    }
+}
