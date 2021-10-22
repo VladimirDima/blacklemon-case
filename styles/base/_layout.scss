@@ -28,11 +28,15 @@ body {
     }
     .product-subtitle {
         margin: $default-margin;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $beige;
         font-weight: 300;
         color: $grey;
     }
     .product-description {
         margin: $default-margin;
+        padding: 20px 0 40px 0;
+        border-bottom: 1px solid $beige;
         font-weight: 300;
         color: $grey;
     }
@@ -41,22 +45,54 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         margin: $default-margin;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $beige;
         .icon {
             display: flex;
             align-items: center;
             min-width: 175px;
             height: 100px;
             padding: 5px;
+            .icon-text {
+                margin-left: 0.5rem;
+                font-size: $font-size-base;
+                color: $beige;
+            }
         }
     }
-    .add-to-cart {
-        background: none;
-        color: inherit;
-        border: none;
-        padding: 0;
-        cursor: pointer;
-        outline: inherit;
-        font-weight: 300;
+    .add-to-cart-wrapper {
+        display: flex;
+        justify-content: center;
         margin: $default-margin;
+        .add-to-cart {
+            width: 100%;
+            padding: 20px;
+            background: $olive;
+            color: inherit;
+            font-size: $font-size-large;
+            border: none;
+            cursor: pointer;
+            outline: inherit;
+            font-weight: 300;
+        }
+    }
+}
+
+.product-carousel {
+    h3 {
+        display: block;
+        max-width: fit-content;
+        margin: 1em auto;
+        font-size: $font-size-h3;
+    }
+    .owl-carousel {
+        .item {
+            align-items: center;
+            background-color: tomato;
+            color: white;
+            display: flex;
+            height: 300px;
+            justify-content: center;
+        }
     }
 }
