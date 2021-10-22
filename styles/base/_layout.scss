@@ -3,96 +3,191 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-.product-img {
-    img {
-        max-width: 100%;
-        display: block;
-        height: auto;
-    }
-}
-
-.product-info {
-    .navigate-back {
-        background: none;
-        color: inherit;
-        border: none;
-        padding: 0;
-        cursor: pointer;
-        outline: inherit;
-        font-weight: 300;
-        margin: $default-margin;
-    }
-    .product-title {
-        margin: $default-margin;
-        font-size: $font-size-h3;
-    }
-    .product-subtitle {
-        margin: $default-margin;
-        padding-bottom: 20px;
-        border-bottom: 1px solid $beige;
-        font-weight: 300;
-        color: $grey;
-    }
-    .product-description {
-        margin: $default-margin;
-        padding: 20px 0 40px 0;
-        border-bottom: 1px solid $beige;
-        font-weight: 300;
-        color: $grey;
-    }
-    .icons {
+.header {
+    display: block;
+    background-color: $grey-light;
+    @media only screen and (min-width: 600px) {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: $default-margin;
-        padding-bottom: 20px;
-        border-bottom: 1px solid $beige;
-        .icon {
+    }
+    @media only screen and (min-width: 1600px) {
+        max-width: 1370px;
+        margin: 0 auto;
+    }
+    .product-img {
+        @media only screen and (min-width: 600px) {
             display: flex;
             align-items: center;
-            min-width: 175px;
-            height: 100px;
-            padding: 5px;
-            .icon-text {
-                margin-left: 0.5rem;
-                font-size: $font-size-base;
-                color: $beige;
+            justify-content: center;
+            overflow: hidden;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+            height: auto;
+            @media only screen and (min-width: 600px) {
+                width: 910px;
+                max-width: initial;
             }
         }
     }
-    .add-to-cart-wrapper {
-        display: flex;
-        justify-content: center;
-        margin: $default-margin;
-        .add-to-cart {
-            width: 100%;
-            padding: 20px;
-            background: $olive;
+    .product-info {
+        max-width: 420px;
+        margin: 0 auto;
+        @media only screen and (min-width: 1000px) {
+            padding: 0px 25px;
+        }
+        .navigate-back {
+            background: none;
             color: inherit;
-            font-size: $font-size-large;
             border: none;
+            padding: 0;
             cursor: pointer;
             outline: inherit;
+            font-size: $font-size-small;
             font-weight: 300;
+            margin: 1rem 1rem 3rem 1rem;
+            &.arrow {
+                &::before {
+                    display: inline-block;
+                    padding-right: 8px;
+                    content: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.0009 4.50063C14.0009 4.36802 13.9482 4.24085 13.8544 4.14708C13.7607 4.05331 13.6335 4.00063 13.5009 4.00063H1.70789L4.85489 0.854632C4.90138 0.808144 4.93826 0.752955 4.96342 0.692215C4.98858 0.631476 5.00153 0.566375 5.00153 0.500632C5.00153 0.434888 4.98858 0.369788 4.96342 0.309048C4.93826 0.248309 4.90138 0.193119 4.85489 0.146631C4.80841 0.100144 4.75322 0.0632674 4.69248 0.0381083C4.63174 0.0129493 4.56664 0 4.50089 0C4.43515 0 4.37005 0.0129493 4.30931 0.0381083C4.24857 0.0632674 4.19338 0.100144 4.14689 0.146631L0.146894 4.14663C0.100331 4.19308 0.0633877 4.24825 0.0381812 4.309C0.0129748 4.36974 0 4.43486 0 4.50063C0 4.5664 0.0129748 4.63152 0.0381812 4.69226C0.0633877 4.75301 0.100331 4.80819 0.146894 4.85463L4.14689 8.85463C4.19338 8.90112 4.24857 8.938 4.30931 8.96315C4.37005 8.98831 4.43515 9.00126 4.50089 9.00126C4.56664 9.00126 4.63174 8.98831 4.69248 8.96315C4.75322 8.938 4.80841 8.90112 4.85489 8.85463C4.90138 8.80814 4.93826 8.75295 4.96342 8.69221C4.98858 8.63148 5.00153 8.56637 5.00153 8.50063C5.00153 8.43489 4.98858 8.36979 4.96342 8.30905C4.93826 8.24831 4.90138 8.19312 4.85489 8.14663L1.70789 5.00063H13.5009C13.6335 5.00063 13.7607 4.94795 13.8544 4.85419C13.9482 4.76042 14.0009 4.63324 14.0009 4.50063Z' fill='%239F938B'/%3E%3C/svg%3E");
+                    -webkit-transition: transform 0.3s ease-out;
+                    -moz-transition: transform 0.3s ease-out;
+                    -ms-transition: transform 0.3s ease-out;
+                    -o-transition: transform 0.3s ease-out;
+                    transition: transform 0.3s ease-out;
+                }
+                &:hover {
+                    &::before {
+                        -webkit-transform: translateX(-4px);
+                        -moz-transform: translateX(-4px);
+                        -ms-transform: translateX(-4px);
+                        -o-transform: translateX(-4px);
+                        transform: translateX(-4px);
+                    }
+                }
+            }
+        }
+        .product-title {
+            margin: $default-margin;
+            font-size: $font-size-h3;
+        }
+        .product-subtitle {
+            margin: $default-margin;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $beige;
+            font-weight: 300;
+            color: $grey;
+        }
+        .product-description {
+            margin: $default-margin;
+            padding: 20px 0 40px 0;
+            border-bottom: 1px solid $beige;
+            font-weight: 300;
+            color: $grey;
+            line-height: 1.5;
+        }
+        .icons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: $default-margin;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $beige;
+            .icon {
+                display: flex;
+                align-items: center;
+                height: 100px;
+                .icon-text {
+                    margin-left: 0.5rem;
+                    font-size: $font-size-base;
+                    color: $beige;
+                }
+            }
+        }
+        .add-to-cart-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 3rem 1rem;
+            .add-to-cart {
+                position: relative;
+                width: 100%;
+                padding: 20px;
+                background: $olive;
+                color: $grey;
+                font-size: $font-size-large;
+                border: none;
+                cursor: pointer;
+                outline: inherit;
+                font-weight: 300;
+                text-align: center;
+                transition: all .5s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 }
 
+// CSS for the owl carousel
 .product-carousel {
-    h3 {
+    margin-left: $default-margin;
+    padding: 50px 0 100px 0;
+    overflow: hidden;
+    @media only screen and (min-width: 1600px) {
+        max-width: 1370px;
+        margin: 0 auto;
+    }
+    .product-carousel-title {
         display: block;
         max-width: fit-content;
         margin: 1em auto;
         font-size: $font-size-h3;
+        font-weight: $font-weight-base;
+        color: $grey;
     }
     .owl-carousel {
+        .owl-stage-outer {
+            overflow: initial;
+        }
+        .owl-item:hover .item,
+        .owl-item:focus .item {
+            transform: scale(1.1);
+        }
         .item {
-            align-items: center;
-            background-color: tomato;
-            color: white;
             display: flex;
             height: 300px;
-            justify-content: center;
+            justify-content: left;
+            background-image: url('../assets/img/product-image-narrow.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            text-transform: uppercase;
+            transition: all .5s;
+            cursor: pointer;
+            .item-info {
+                position: absolute;
+                bottom: -70px;
+                color: black;
+                z-index: 100;
+                display: block;
+                font-size: 11px;
+                @media only screen and (min-width: 420px) {
+                    bottom: -50px;
+                }
+                h4:nth-child(1) {
+                    font-weight: $font-weight-base;
+                }
+                h4:nth-child(2) {
+                    font-weight: $font-weight-light;
+                }
+                h5 {
+                    margin-top: 10px;
+                }
+            }
         }
     }
 }

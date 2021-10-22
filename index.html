@@ -7,13 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Blacklemon - product</title>
-    <meta name="description" content="A simple HTML5 Template for new projects.">
-    <meta name="author" content="SitePoint">
+    <meta name="description" content="A simple product page.">
+    <meta name="author" content="Vladimir">
 
     <meta property="og:title" content="A Basic HTML5 Template">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-    <meta property="og:description" content="A simple HTML5 Template for new projects.">
     <meta property="og:image" content="image.png">
 
     <link rel="icon" href="/favicon.ico">
@@ -32,13 +30,16 @@
     <div class="wrapper">
         <div class="header">
             <div class="product-img">
-                <img src="assets/img/dummy.png" alt="">
+                <img src="assets/img/product-image.png" alt="">
             </div>
             <div class="product-info">
-                <button class="navigate-back">ALL PRODUCTS / HAIRCARE / RESTORATIVE HAIR MASK</button>
+                <!-- The button below should be a <button></button> element.
+                     Because of a chrome bug, the font-weight can't be set.
+                     Using a div instead, is a temporary fix. -->
+                <div class="navigate-back arrow">ALL PRODUCTS / HAIRCARE / RESTORATIVE HAIR MASK</div>
                 <h3 class="product-title">RESTORATIVE HAIR MASK</h3>
                 <h4 class="product-subtitle">NURISHMENT IN A BOTTLE</h4>
-                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.</div>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.</p>
                 <div class="icons">
                     <div class="icon">
                         <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,47 +71,63 @@
                     </div>
                 </div>
                 <div class="add-to-cart-wrapper">
-                    <button class="add-to-cart">ADD TO CART</button>
+                    <!-- The button below should be a <button></button> element.
+                     Because of a chrome bug, the font-weight can't be set.
+                     Using a div instead, is a temporary fix. -->
+                    <div class="add-to-cart">ADD TO CART</div>
                 </div>
             </div>
-            <div class="product-carousel">
-                <h3>YOU MAY ALSO LIKE</h3>
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <h4>1</h4>
+        </div>
+        <div class="product-carousel">
+            <h3 class="product-carousel-title">YOU MAY ALSO LIKE</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="item-info">
+                        <h4>HAND POMADE / POMMADE MAINS</h4>
+                        <h4>NOURISHMENT FOR YOUR HANDS</h4>
+                        <h5>159,00 KR</h5>
                     </div>
-                    <div class="item">
-                        <h4>2</h4>
+                </div>
+                <div class="item">
+                    <div class="item-info">
+                        <h4>HAND POMADE / POMMADE MAINS</h4>
+                        <h4>NOURISHMENT FOR YOUR HANDS</h4>
+                        <h5>159,00 KR</h5>
                     </div>
-                    <div class="item">
-                        <h4>3</h4>
+                </div>
+                <div class="item">
+                    <div class="item-info">
+                        <h4>HAND POMADE / POMMADE MAINS</h4>
+                        <h4>NOURISHMENT FOR YOUR HANDS</h4>
+                        <h5>159,00 KR</h5>
                     </div>
-                    <div class="item">
-                        <h4>4</h4>
+                </div>
+                <div class="item">
+                    <div class="item-info">
+                        <h4>HAND POMADE / POMMADE MAINS</h4>
+                        <h4>NOURISHMENT FOR YOUR HANDS</h4>
+                        <h5>159,00 KR</h5>
                     </div>
-                    <div class="item">
-                        <h4>5</h4>
+                </div>
+                <div class="item">
+                    <div class="item-info">
+                        <h4>HAND POMADE / POMMADE MAINS</h4>
+                        <h4>NOURISHMENT FOR YOUR HANDS</h4>
+                        <h5>159,00 KR</h5>
                     </div>
-                    <div class="item">
-                        <h4>6</h4>
+                </div>
+                <div class="item">
+                    <div class="item-info">
+                        <h4>HAND POMADE / POMMADE MAINS</h4>
+                        <h4>NOURISHMENT FOR YOUR HANDS</h4>
+                        <h5>159,00 KR</h5>
                     </div>
-                    <div class="item">
-                        <h4>7</h4>
-                    </div>
-                    <div class="item">
-                        <h4>8</h4>
-                    </div>
-                    <div class="item">
-                        <h4>9</h4>
-                    </div>
-                    <div class="item">
-                        <h4>10</h4>
-                    </div>
-                    <div class="item">
-                        <h4>11</h4>
-                    </div>
-                    <div class="item">
-                        <h4>12</h4>
+                </div>
+                <div class="item">
+                    <div class="item-info">
+                        <h4>HAND POMADE / POMMADE MAINS</h4>
+                        <h4>NOURISHMENT FOR YOUR HANDS</h4>
+                        <h5>159,00 KR</h5>
                     </div>
                 </div>
             </div>
